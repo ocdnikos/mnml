@@ -17,6 +17,8 @@ body {
 header {
   text-align: center;
   margin-bottom: 3em; }
+  header a {
+    color: black; }
   header h1 {
     font-family: "Maven Pro", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -25,8 +27,7 @@ header {
     line-height: 1.5em;
     padding-bottom: 0.1em; }
     header h1 a {
-      text-decoration: none;
-      color: black; }
+      text-decoration: none; }
   header p {
     margin: 0 auto;
     max-width: 60%;
@@ -81,10 +82,11 @@ section.post {
     font-family: "Maven Pro", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
     line-height: 1.5em;
     font-size: 0.7em;
-    padding-bottom: 0.5em; }
+    margin-bottom: 1em; }
     section.post p.meta span {
       color: black;
-      font-weight: 700; }
+      font-weight: 700;
+      text-decoration: none; }
   section.post section.content {
     font-family: "Noto Serif", serif; }
     section.post section.content p {
@@ -135,7 +137,6 @@ section.post {
     section.post section.content a.more {
       float: right;
       color: black;
-      font-size: 0.9em;
-      font-style: oblique; }
+      font-size: 0.9em; }
       section.post section.content a.more, section.post section.content a.more:hover, section.post section.content a.more:active, section.post section.content a.more:visited {
         text-decoration: none; }
