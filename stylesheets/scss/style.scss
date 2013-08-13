@@ -47,28 +47,31 @@ header {
 		padding-bottom: 1.2em;
 	}
 	
-	nav {
+	ul#nav {
 		font-family: "Maven Pro", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: 1.07em;
-	
-		a {
+		
+		li {
+			display: inline;
 			padding-right: 30px;
+			margin: 0 auto;
 
-			&, &:hover, &:active, &:visited {
+			a {
 				text-decoration: none;
 				color: #373737;
-			}
 			
-			@media (max-width:500px) {
-				display: block;
-				padding: 0.3em 0;
+				&:hover {
+					color: black;
+				}
 			}
-		}
-		
-		a:last-child {
-			padding-right: 0;
+
+			@media (max-width: 500px) {
+				display: block;
+				padding: 0.5em 0;
+				margin-left: -3em;
+			}
 		}
 	}
 }

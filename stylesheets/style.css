@@ -34,22 +34,25 @@ header {
     font-family: "Noto Serif", serif;
     line-height: 1.5em;
     padding-bottom: 1.2em; }
-  header nav {
+  header ul#nav {
     font-family: "Maven Pro", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.07em; }
-    header nav a {
-      padding-right: 30px; }
-      header nav a, header nav a:hover, header nav a:active, header nav a:visited {
+    header ul#nav li {
+      display: inline;
+      padding-right: 30px;
+      margin: 0 auto; }
+      header ul#nav li a {
         text-decoration: none;
         color: #373737; }
+        header ul#nav li a:hover {
+          color: black; }
       @media (max-width: 500px) {
-        header nav a {
+        header ul#nav li {
           display: block;
-          padding: 0.3em 0; } }
-    header nav a:last-child {
-      padding-right: 0; }
+          padding: 0.5em 0;
+          margin-left: -3em; } }
 
 div#divider {
   height: 1px;
