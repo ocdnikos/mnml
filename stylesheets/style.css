@@ -92,18 +92,18 @@ section.post {
       text-decoration: none; }
   section.post section.content {
     font-family: "Noto Serif", serif; }
-    section.post section.content p {
+    section.post section.content p, section.post section.content div {
       line-height: 1.7em;
       padding-bottom: 1em;
       font-size: 0.9em; }
-      section.post section.content p a {
+      section.post section.content p a, section.post section.content div a {
         color: black;
         text-decoration: none;
         font-weight: 500;
         border-bottom: 1px dotted black; }
-      section.post section.content p em {
+      section.post section.content p em, section.post section.content div em {
         font-style: oblique; }
-      section.post section.content p strong {
+      section.post section.content p strong, section.post section.content div strong {
         font-weight: 700; }
     section.post section.content h1, section.post section.content h2, section.post section.content h3 {
       padding-left: 0.5%; }
