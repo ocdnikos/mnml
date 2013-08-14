@@ -22,6 +22,10 @@ header {
 	text-align: center;
 	margin-bottom: 3em;
 	
+	a {
+		color: black;
+	}
+
 	h1 {
 		font-family: "Maven Pro", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
@@ -29,9 +33,9 @@ header {
 		font-size: 3em;
 		line-height: 1.5em;
 		padding-bottom: 0.1em;
+
 		a {
 			text-decoration: none;
-			color: black;
 		}
 	}
 	
@@ -43,28 +47,31 @@ header {
 		padding-bottom: 1.2em;
 	}
 	
-	nav {
+	ul#nav {
 		font-family: "Maven Pro", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: 1.07em;
-	
-		a {
+		
+		li {
+			display: inline;
 			padding-right: 30px;
+			margin: 0 auto;
 
-			&, &:hover, &:active, &:visited {
+			a {
 				text-decoration: none;
 				color: #373737;
-			}
 			
-			@media (max-width:500px) {
-				display: block;
-				padding: 0.3em 0;
+				&:hover {
+					color: black;
+				}
 			}
-		}
-		
-		a:last-child {
-			padding-right: 0;
+
+			@media (max-width: 500px) {
+				display: block;
+				padding: 0.5em 0;
+				margin-left: -3em;
+			}
 		}
 	}
 }
@@ -112,16 +119,18 @@ section.post {
 		font-family: "Maven Pro", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 		line-height: 1.5em;
 		font-size: 0.7em;
-		padding-bottom: 0.5em;
 		span {
 			color: black;
 			font-weight: 700;
+			text-decoration: none;
 		}
+
+		margin-bottom: 1em;
 	}
 	
 	section.content {
 		font-family: "Noto Serif", serif;
-		p {
+		p, div {
 			line-height: 1.7em;
 			padding-bottom: 1em;
 			font-size: 0.9em;
@@ -191,7 +200,6 @@ section.post {
 			float: right;
 			color: black;
 			font-size: 0.9em;
-			font-style: oblique;
 			
 			&, &:hover, &:active, &:visited {
 				text-decoration: none;

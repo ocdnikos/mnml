@@ -8,4 +8,4 @@ The template is populated with the specified data from the [Barley template docs
 There's also a live version with placeholder content available [here](http://ursa.ldwg.me/mnml/).
 
 
-Created by Colby Lugwig, edited by Plain.
+Created by Colby Ludwig, edited by Plain.
